@@ -1,23 +1,28 @@
-<div class="container mx-auto mt-5">
-    <div class="flex flex-col">
-        <mat-form-field>
+<div class="container mx-auto mt-5 text-center ">
+    <div class="grid grid-rows-4 mx-auto mt-24 w-11/12 md:max-w-1/2" >
+        
+        <h2>Iniciar sesion</h2>
+        
+        <mat-form-field color="accent">
             <mat-label>Usuario</mat-label>
             <input matInput placeholder="Nombre de Usuario">
         </mat-form-field>
         
-        <mat-form-field>
+        <mat-form-field color="accent">
             <mat-label>Contraseña</mat-label>
             <input matInput placeholder="Ingresar contraseña">
         </mat-form-field>
 
-        <button mat-fab extended color="primary">
+        <button mat-raised-button extended color="primary">
             <mat-icon>save</mat-icon>
             Ingresar
         </button>
 
+        <div class="text-right -mt-4">
+            <a routerLink="/auth/new-account">¿Ya tienes cuenta?</a>
+        </div>
     </div>
+
+    
 </div>
 
-<div class="container mx-auto mt-5">
-    <a routerLink="/auth/new-account">¿Ya tienes cuenta?</a>
-</div>
