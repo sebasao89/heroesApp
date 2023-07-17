@@ -1,5 +1,9 @@
-<ul>
-    <li *ngFor="let hero of heroes">
-        {{ hero.superhero }}
-    </li>
-</ul>
+<h2>Listado de Heroes</h2>
+<mat-divider></mat-divider>
+
+<div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5">
+    <div *ngFor="let hero of heroes" class="m-3">
+        <app-card [hero]="hero"></app-card>
+    </div>
+</div>
+
