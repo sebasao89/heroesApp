@@ -1,4 +1,11 @@
-<div class="flex p-4">
+<div class="flex flex-col p-4">
     <h3>Buscador</h3>
+
+    <mat-form-field>
+        <mat-label>Buscador de Heroes</mat-label>
+        <input type="text" matInput [formControl]="searchInput">
+    </mat-form-field>
+
+    {{ searchInput.value | json}}
 
 </div>
